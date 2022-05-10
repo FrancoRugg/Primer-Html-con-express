@@ -1,0 +1,40 @@
+body {
+    
+    font-family: 'Macondo', cursive;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-size: 17px;
+    line-height: 24px;
+
+}
+
+.parrafo-destacado{
+  color: salmon;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.parrafo-destacado em {
+    color: red;
+    text-transform: uppercase ;
+}
+
+p strong{
+    background-color: rosybrown;
+    color: aqua;
+    font-style: italic;
+}
+
+strong{
+    color: green;
+}
