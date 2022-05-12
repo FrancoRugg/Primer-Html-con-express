@@ -2,134 +2,43 @@
     box-sizing: border-box;
 }
 
-.oculto{
-    display: none;
-}
-
 .contenedor1{
-    width: 80%;
+    width: 90%;
     padding: 20px;
-    background-color: chartreuse;
-    border: dotted 6px blue;
+    background-color: salmon;
+
 }
 
 .contenedor2{
-    width: 90%;
-    background-color: crimson;
-    border-radius: 5px;
-
-}
-
-.contenedor3{
-    width: 90%;
-    max-width: 1200px;
-    padding: 15px;
-    background-color: pink;
-    border: double 5px darkorange;
-
-}
-
-.contenedor4{
     width: 50%;
-    max-width: 1200px;
     padding: 20px;
-    background-color: pink;
-    border: dashed 6px purple;
+    background-color: #b4fa72;
 
 }
-
-body {
-    
-    font-family: 'Macondo', cursive;
-}
-
-h1{
-    font-weight: 600;
-    font-size: 50px;
-}
-
-h2{
-    font-size: 20px;
-}
-
-p{
-    font-size: 17px;
-    line-height: 24px;
-
-}
-
-.parrafo-destacado{
-  color: salmon;
-  font-size: 30px;
-  line-height: 38px;
-}
-
-.parrafo-destacado em {
-    color: red;
-    text-transform: uppercase ;
-}
-
-p strong{
-    background-color: rosybrown;
-    color: aqua;
-    font-style: italic;
-}
-
-strong{
-    color: green;
-}
-
-.sin-color{
-    display: inline-block;
-}
-
-@media (min-width:576px ) {
-    .contenedor3{
+@media (min-width: 576px) {
+    .contenedor1, .contenedor2{
         width: 70%;
-        margin: auto ; 
-        background-color: yellow;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor1{
+        background-color: black;
         color: white;
     }
-    .contenedor4{
-        width: 70%;
-        margin: auto ;
-        background-color: yellow;
-        color:red;
+     .contenedor2{
+     background-color: #daa618a6;
+     color:blue;
     }
 }
-
-@media (min-width:768px ) {
-    .contenedor4{
-        background-color: white;
-        
+@media (min-width: 992px) {
+    .contenedor1, .contenedor2{
+        border: solid 10px yellow;
     }
-    .contenedor3{
-        width: 70%;
-        margin: auto ; 
-        background-color: white;
-        
+}
+@media (min-width: 1200px) {
+    .contenedor1, .contenedor2{
+        max-width: 1100px;
     }
     
-}
-
-@media (min-width:992px ) {
-    .contenedor3{
-    border: 10px;
-    }
-    .contenedor4{
-        border: 10px;
-    }
-}
-
-@media (min-width: 1200px  ) {
-    .contenedor4{
-        max-height: 1100px;
-       
-    }
-    .contenedor3{
-        max-height: 1100px;
-        }
-    .oculto{
-        display: block;
-    }
 }
