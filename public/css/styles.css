@@ -1,3 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.oculto{
+    display: none;
+}
+
+.contenedor1{
+    width: 80%;
+    padding: 20px;
+    background-color: chartreuse;
+    border: dotted 6px blue;
+}
+
+.contenedor2{
+    width: 90%;
+    background-color: crimson;
+    border-radius: 5px;
+
+}
+
+.contenedor3{
+    width: 90%;
+    max-width: 1200px;
+    padding: 15px;
+    background-color: pink;
+    border: double 5px darkorange;
+
+}
+
+.contenedor4{
+    width: 50%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: pink;
+    border: dashed 6px purple;
+
+}
+
 body {
     
     font-family: 'Macondo', cursive;
@@ -37,4 +77,59 @@ p strong{
 
 strong{
     color: green;
+}
+
+.sin-color{
+    display: inline-block;
+}
+
+@media (min-width:576px ) {
+    .contenedor3{
+        width: 70%;
+        margin: auto ; 
+        background-color: yellow;
+        color: white;
+    }
+    .contenedor4{
+        width: 70%;
+        margin: auto ;
+        background-color: yellow;
+        color:red;
+    }
+}
+
+@media (min-width:768px ) {
+    .contenedor4{
+        background-color: white;
+        
+    }
+    .contenedor3{
+        width: 70%;
+        margin: auto ; 
+        background-color: white;
+        
+    }
+    
+}
+
+@media (min-width:992px ) {
+    .contenedor3{
+    border: 10px;
+    }
+    .contenedor4{
+        border: 10px;
+    }
+}
+
+@media (min-width: 1200px  ) {
+    .contenedor4{
+        max-height: 1100px;
+       
+    }
+    .contenedor3{
+        max-height: 1100px;
+        }
+    .oculto{
+        display: block;
+    }
 }
